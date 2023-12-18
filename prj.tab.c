@@ -1663,8 +1663,9 @@ int main() {
     yyparse(); // Appel à l'analyseur syntaxique
     return 0;
 }
-
 void yyerror(char *msg) {
-    printf("Erreur syntaxique a la ligne %d\n", nb_ligne);
+    printf("Erreur syntaxique à la ligne %d : %s\n", nb_ligne, msg);
 }
+
+
 

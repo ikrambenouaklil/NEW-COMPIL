@@ -286,13 +286,13 @@ static void yy_fatal_error YY_PROTO(( yyconst char msg[] ));
 #define YY_END_OF_BUFFER 37
 static yyconst short int yy_accept[76] =
     {   0,
-        0,    0,   37,   35,   32,   34,   19,   20,   14,   12,
-        4,   13,   15,   30,   35,    3,   25,   35,   23,   29,
-       29,   29,   29,   29,   29,   29,   29,   29,   29,   17,
-       18,   30,    0,    2,   26,   27,   16,   24,   29,   29,
-       29,   29,   29,   29,   29,   29,   29,   29,   29,   21,
-        0,   33,   31,   29,   29,   29,   11,   29,   29,    5,
-       29,   29,   28,   29,    7,   29,   29,   29,    9,   22,
+        0,    0,   37,   35,   30,   29,   19,   20,   14,   12,
+        4,   13,   15,   33,   35,    3,   25,   35,   23,   32,
+       32,   32,   32,   32,   32,   32,   32,   32,   32,   17,
+       18,   33,    0,    2,   26,   27,   16,   24,   32,   32,
+       32,   32,   32,   32,   32,   32,   32,   32,   32,   21,
+        0,   31,   34,   32,   32,   32,   11,   32,   32,    5,
+       32,   32,   28,   32,    7,   32,   32,   32,    9,   22,
        10,    1,    8,    6,    0
     } ;
 
@@ -416,7 +416,7 @@ char *yytext;
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "prj2.tab.h" 
+#include "prj.tab.h" 
 extern int nb_ligne;
 #line 422 "lex.yy.c"
 
@@ -798,58 +798,60 @@ YY_RULE_SETUP
 case 29:
 YY_RULE_SETUP
 #line 45 "prj.l"
-{
-    if (yyleng > 10) {
-        printf("Erreur lexicale � la ligne %d : L'identificateur est trop long\n", nb_ligne);
-    }
-    return idf;
-}
+{ nb_ligne++; }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 52 "prj.l"
-{
-    return nbre;
-}
-	YY_BREAK
-case 31:
-YY_RULE_SETUP
-#line 56 "prj.l"
-{
-    return nbrr;
-}
-	YY_BREAK
-case 32:
-YY_RULE_SETUP
-#line 60 "prj.l"
+#line 47 "prj.l"
 {
     // Ignorer les espaces et les tabulations
 }
 	YY_BREAK
-case 33:
+case 31:
 YY_RULE_SETUP
-#line 64 "prj.l"
+#line 51 "prj.l"
 {
     // Ignorer les commentaires
     nb_ligne++;
 }
 	YY_BREAK
+case 32:
+YY_RULE_SETUP
+#line 56 "prj.l"
+{
+    if (yyleng > 10) {
+        printf("Erreur lexicale à la ligne %d : L'identificateur est trop long\n", nb_ligne);
+    }
+    return idf;
+}
+	YY_BREAK
+case 33:
+YY_RULE_SETUP
+#line 63 "prj.l"
+{
+    return nbre;
+}
+	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 69 "prj.l"
-nb_ligne++;
+#line 67 "prj.l"
+{
+    return nbrr;
+}
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 72 "prj.l"
-printf("Erreur lexicale  la ligne %d : Caractere non reconnu est '%s'\n", nb_ligne, yytext);
+#line 71 "prj.l"
+{
+    printf("Erreur lexicale à la ligne %d : Caractère non reconnu '%s'\n", nb_ligne, yytext);
+}
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 74 "prj.l"
+#line 77 "prj.l"
 ECHO;
 	YY_BREAK
-#line 853 "lex.yy.c"
+#line 855 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1735,4 +1737,4 @@ int main()
 	return 0;
 	}
 #endif
-#line 74 "prj.l"
+#line 77 "prj.l"
