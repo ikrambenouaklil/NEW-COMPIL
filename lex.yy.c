@@ -418,7 +418,7 @@ char *yytext;
 #include <string.h>
 #include "prj.tab.h" 
 extern int nb_ligne ;
-nb_ligne =1;
+
 #line 423 "lex.yy.c"
 
 /* Macros after this point can all be overridden by user definitions in
