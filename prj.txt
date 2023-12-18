@@ -1,5 +1,5 @@
 CONST INT X2 := 3;
 INT X1 ;
 BEGIN
-X1 := 1 ;
+X1 := X2+X1+333;
 END

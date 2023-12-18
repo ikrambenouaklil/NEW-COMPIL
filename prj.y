@@ -44,10 +44,9 @@ AFF: OPT INST | OPT
 
 
 ;
-
 OPT: idf aff GP pvg | idf aff NV pvg
 ;
-GP: idf OPRAT GP | idf 
+GP: idf OPRAT GP | idf | NC
 ;
 OPRAT: add | minus | mult | divi
 ;
