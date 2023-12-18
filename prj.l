@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "prj.tab.h" 
-extern int nb_ligne;
+extern int nb_ligne =1 ;
 %}
 
 idf_lex [A-Za-z]([A-Za-z0-9_])*
