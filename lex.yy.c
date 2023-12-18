@@ -417,8 +417,9 @@ char *yytext;
 #include <stdlib.h>
 #include <string.h>
 #include "prj.tab.h" 
-extern int nb_ligne;
-#line 422 "lex.yy.c"
+extern int nb_ligne ;
+nb_ligne =1;
+#line 423 "lex.yy.c"
 
 /* Macros after this point can all be overridden by user definitions in
  * section 1.
@@ -569,10 +570,10 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 14 "prj.l"
+#line 15 "prj.l"
 
 
-#line 576 "lex.yy.c"
+#line 577 "lex.yy.c"
 
 	if ( yy_init )
 		{
@@ -657,159 +658,159 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 16 "prj.l"
+#line 17 "prj.l"
 {return const_lex; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 17 "prj.l"
+#line 18 "prj.l"
 { return aff; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 18 "prj.l"
+#line 19 "prj.l"
 { return pvg; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 19 "prj.l"
+#line 20 "prj.l"
 { return vg; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 20 "prj.l"
+#line 21 "prj.l"
 { return int_lex; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 21 "prj.l"
+#line 22 "prj.l"
 { return float_lex; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 22 "prj.l"
+#line 23 "prj.l"
 {return bool_lex; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 23 "prj.l"
+#line 24 "prj.l"
 { return false_lex; }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 24 "prj.l"
+#line 25 "prj.l"
 { return true_lex; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 25 "prj.l"
+#line 26 "prj.l"
 { return begin_lex; }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 26 "prj.l"
+#line 27 "prj.l"
 { return end_lex; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 27 "prj.l"
+#line 28 "prj.l"
 { return add; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 28 "prj.l"
+#line 29 "prj.l"
 { return minus; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 29 "prj.l"
+#line 30 "prj.l"
 { return mult; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 30 "prj.l"
+#line 31 "prj.l"
 { return divi; }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 31 "prj.l"
+#line 32 "prj.l"
 { return equal; }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 32 "prj.l"
+#line 33 "prj.l"
 { return acolovr; }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 33 "prj.l"
+#line 34 "prj.l"
 { return acolfermt; }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 34 "prj.l"
+#line 35 "prj.l"
 { return parovt; }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 35 "prj.l"
+#line 36 "prj.l"
 { return parfrt; }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 36 "prj.l"
+#line 37 "prj.l"
 { return cndtinst; }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 37 "prj.l"
+#line 38 "prj.l"
 { return elseinst; }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 38 "prj.l"
+#line 39 "prj.l"
 { return bigger_lex; }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 39 "prj.l"
+#line 40 "prj.l"
 { return biggereq_lex; }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 40 "prj.l"
+#line 41 "prj.l"
 { return less_lex; }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 41 "prj.l"
+#line 42 "prj.l"
 { return lessreq_lex; }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 42 "prj.l"
+#line 43 "prj.l"
 { return noeql_lex; }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 43 "prj.l"
+#line 44 "prj.l"
 { return bocleinst; }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 45 "prj.l"
+#line 46 "prj.l"
 { nb_ligne++; }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 47 "prj.l"
+#line 48 "prj.l"
 {
     // Ignorer les espaces et les tabulations
 }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 51 "prj.l"
+#line 52 "prj.l"
 {
     // Ignorer les commentaires
     nb_ligne++;
@@ -817,7 +818,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 56 "prj.l"
+#line 57 "prj.l"
 {
     if (yyleng > 10) {
         printf("Erreur lexicale à la ligne %d : L'identificateur est trop long\n", nb_ligne);
@@ -827,31 +828,31 @@ YY_RULE_SETUP
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 63 "prj.l"
+#line 64 "prj.l"
 {
     return nbre;
 }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 67 "prj.l"
+#line 68 "prj.l"
 {
     return nbrr;
 }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 71 "prj.l"
+#line 72 "prj.l"
 {
     printf("Erreur lexicale à la ligne %d : Caractère non reconnu '%s'\n", nb_ligne, yytext);
 }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 77 "prj.l"
+#line 78 "prj.l"
 ECHO;
 	YY_BREAK
-#line 855 "lex.yy.c"
+#line 856 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1737,4 +1738,4 @@ int main()
 	return 0;
 	}
 #endif
-#line 77 "prj.l"
+#line 78 "prj.l"
