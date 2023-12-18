@@ -1,5 +1,10 @@
-CONST INT X2 := 3;
-INT X1 ;
+
+INT i ;
+INT B ;
 BEGIN
-X1 := X2+X1+333;
+i := 3;
+B := 3;
+for (i:=1 ;i<=10 ;i:=i+1) {
+B:=B+2;
+}
 END
