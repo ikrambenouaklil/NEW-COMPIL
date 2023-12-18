@@ -1,0 +1,4 @@
+INITV: TV idf aff NV pvg V | TV idf aff NV pvg
+;
+DCLRV: TV IDF pvg V | TV IDF pvg
+;
